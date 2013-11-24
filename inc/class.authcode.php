@@ -1,3 +1,4 @@
+<?php
 /**
  * The MIT License (MIT)
  * 
@@ -21,30 +22,29 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
- 
-<?php
-	session_start();
-	Header("Content-type: image/PNG");
-	$im = imagecreate(50,30);
-	$bg = ImageColorAllocate($im, 0,0,0);
-	imagefill($im,0,0,$bg);
-	$vcodes = "";
-	srand((double)microtime()*1000000);
-	
-	for($i = 0; $i < 4; $i++) {
-		$font = ImageColorAllocate($im, 200,200,200);
-		$authnum=rand(1,9);
-		$vcodes.=$authnum;
-		imagestring($im, 16, 6+$i*10, 8, $authnum, $font);
-	}
 
-	$_SESSION['VCODE'] = $vcodes;
-	
-	for($i = 0; $i < 100; $i++) {
-		$randcolor = ImageColorallocate($im,rand(0,255),rand(0,255),rand(0,255));
-		//imagesetpixel($im, rand()%70 , rand()%30 , $randcolor);
-	}
-	
-	ImagePNG($im);
-	ImageDestroy($im);
+session_start();
+Header("Content-type: image/PNG");
+$im = imagecreate(50,30);
+$bg = ImageColorAllocate($im, 0,0,0);
+imagefill($im,0,0,$bg);
+$vcodes = "";
+srand((double)microtime()*1000000);
+
+for($i = 0; $i < 4; $i++) {
+	$font = ImageColorAllocate($im, 200,200,200);
+	$authnum = rand(1,9);
+	$vcodes .= $authnum;
+	imagestring($im, 16, 6 + $i * 10, 8, $authnum, $font);
+}
+
+$_SESSION['VCODE'] = $vcodes;
+
+for($i = 0; $i < 100; $i++) {
+	$randcolor = ImageColorallocate($im,rand(0,255),rand(0,255),rand(0,255));
+	//imagesetpixel($im, rand()%70 , rand()%30 , $randcolor);
+}
+
+ImagePNG($im);
+ImageDestroy($im);
 ?>

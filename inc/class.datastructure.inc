@@ -1,3 +1,4 @@
+<?php
 /**
  * The MIT License (MIT)
  * 
@@ -22,7 +23,6 @@
  * SOFTWARE.
  */
  
-<?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.database.inc';
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.debug.inc';
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.message.inc';

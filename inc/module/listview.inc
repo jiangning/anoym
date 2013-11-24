@@ -1,3 +1,4 @@
+<?php
 /**
  * The MIT License (MIT)
  * 
@@ -21,8 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
- 
-<?php
+
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.render.inc';
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.box.inc';
 require_once $_SERVER['DOCUMENT_ROOT'].'/inc/class.datastructure.inc';

@@ -1,3 +1,4 @@
+<?php
 /**
  * The MIT License (MIT)
  * 
@@ -21,8 +22,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-<?php
 
 define('DB_HOSTNAME','HOSTNAME:PORT');
 define('DB_USER','USERNAME');

@@ -1,3 +1,4 @@
+<?php 
 /**
  * The MIT License (MIT)
  * 
@@ -22,7 +23,6 @@
  * SOFTWARE.
  */
  
-<?php 
 class debug
 {
 	/**
