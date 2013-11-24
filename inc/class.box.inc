@@ -1,3 +1,4 @@
+<?php 
 /**
  * The MIT License (MIT)
  * 
@@ -22,8 +23,6 @@
  * SOFTWARE.
  */
  
-<?php 
-
 class Box
 {
 	public static function getBoxHTML()
